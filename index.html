@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Servicios - Yinneth Lizeth Morales Aldana</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><a href="#">EL ARTE DE MIS DISEÑOS</a></div>
+        <ul class="nav-links">
+            <li><a href="#inicio" class="active">Inicio</a></li>
+            <li><a href="#about">Acerca de mí</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="hamburger-menu">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </label>
+        <nav class="menu-items">
+            <ul>
+                <li><a href="#inicio" onclick="closeMenu()">Inicio</a></li>
+                <li><a href="#about" onclick="closeMenu()">Acerca de mí</a></li>
+                <li><a href="#services" onclick="closeMenu()">Servicios</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="hero-section" id="inicio">
+        <div class="hero-left">
+            <h1>Soy Yinneth Lizeth Morales Aldana</h1>
+            <p>Diseñadora con un enfoque en la creación de soluciones visuales elegantes, fuertes, creativas y efectivas para tu proyecto.</p>
+            <a href="#services" class="cta-button">Ver mis servicios</a>
+        </div>
+        <div class="hero-right">
+            <img src="IMAGENES/ARTE ROSA.jpg" alt="ARTE ROSA">
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="about-section" id="about">
+        <div class="about-left">
+            <img src="IMAGENES/FOTO PERSONAL.png" alt="Mi foto personal">
+        </div>
+        <div class="about-right">
+            <h2>Acerca de mí</h2>
+            <p>Soy una diseñadora con una trayectoria enfocada en la creación de soluciones visuales que no solo son estéticamente agradables, sino también funcionales y efectivas. Mi principal enfoque reside en entender las necesidades de cada proyecto para ofrecer resultados que superen las expectativas.</p>
+            <p>A lo largo de mi carrera, he desarrollado habilidades sólidas en **diseño de identidad de marcas, en ilustración digital e ilustracion analoga. Me considero una persona creativa, proactiva y con una gran capacidad de aprendizaje, siempre buscando nuevas formas de mejorar y de aplicar las últimas tendencias del diseño.</p>
+            <p>Mis virtudes se centran en la atención al detalle, la comunicación clara y la entrega de proyectos de alta calidad. Estoy comprometido con la excelencia y con la creación de diseños que marquen la diferencia.</p>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="content-section" id="services">
+        <h2>Mis Servicios</h2>
+        <p>Ofrezco una variedad de servicios de diseño para ayudarte a destacar. Mi objetivo es combinar la estética con la funcionalidad para obtener resultados memorables.</p>
+
+        <div class="services-container">
+            <div class="service-box" onclick="showExamples('identidad')">
+                <h3>Identidad de Marca y tipografia</h3>
+            </div>
+            <div class="service-box" onclick="showExamples('digital')">
+                <h3>Ilustración Digital</h3>
+            </div>
+            <div class="service-box" onclick="showExamples('analoga')">
+                <h3>Ilustración Análoga</h3>
+            </div>
+        </div>
+
+        <div id="identidad-examples" class="service-examples">
+            <h3>Ejemplos de Identidad de Marca y tipografia</h3>
+            <p>En este apartado, puedes ver cómo construyo marcas desde cero, creando logos, paletas de colores y estilos visuales coherentes que representan la esencia de un negocio.</p>
+            <div class="image-gallery">
+                <img src="IMAGENES/Identidad de Marca y tipografia/ALFABETO DECORATIVO.jpg" alt="Ejemplo de identidad de marca 1">
+                <img src="IMAGENES/Identidad de Marca y tipografia/LOGO Y ETIQUETA DE UNA MARCA DE CERVEZA (1).jpg" alt="Ejemplo de identidad de marca 2">
+                <img src="IMAGENES/Identidad de Marca y tipografia/LOGO DE EMPRESA DE PRODUCTOS DE MASCOTAS.jpg" alt="Ejemplo de identidad de marca 3">
+            </div>
+        </div>
+
+        <div id="digital-examples" class="service-examples">
+            <h3>Ejemplos de Ilustración Digital</h3>
+            <p>Aquí te muestro mi trabajo en ilustración digital, utilizando herramientas modernas para crear arte vectorial y personajes que dan vida a cualquier historia o proyecto.</p>
+            <div class="image-gallery">
+                <img src="IMAGENES/ILUSTRACION DIGITAL/ILUSTRACION DE ROSTRO DE PERSONAJE.jpg" alt="Ejemplo de ilustración digital 1">
+                <img src="IMAGENES/ILUSTRACION DIGITAL/ILUSTRACION ESTILO POP ART.jpg" alt="Ejemplo de ilustración digital 2">
+                <img src="IMAGENES/ILUSTRACION DIGITAL/PORTADA INFANTIL.jpg" alt="Ejemplo de ilustración digital 3">
+            </div>
+        </div>
+
+        <div id="analoga-examples" class="service-examples">
+            <h3>Ejemplos de Ilustración Análoga</h3>
+            <p>Mi amor por el arte tradicional se refleja en mis ilustraciones análogas. Aquí verás dibujos a mano, acuarelas y otras técnicas que aportan un toque único y personal a cada obra.</p>
+            <div class="image-gallery">
+                <img src="IMAGENES/ILUSTRACION ANALOGA/UN PUNTO DE FUGA.jpg" alt="Ejemplo de ilustración análoga 1">
+                <img src="IMAGENES/ILUSTRACION ANALOGA/ACUARELA.jpg" alt="Ejemplo de ilustración análoga 2">
+                <img src="IMAGENES/ILUSTRACION ANALOGA/PERSPECTIVA.jpg" alt="Ejemplo de ilustración análoga 3">
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="content-section gray-bg" id="contact">
+        <h2>Contacto</h2>
+        <p>Si te interesa mi trabajo, no dudes en contactarme. Te dejo mis datos para que podamos empezar a trabajar juntos en tu próximo proyecto.</p>
+        <p>Email: <a href="mailto:lizeth0507aldana@gmail.com">lizeth0507aldana@gmail.com</a></p>
+        <p>Teléfono: +57 3209905700</p>
+        
+        <h4 class="social-title">Redes Sociales</h4>
+
+        <div class="social-links">
+            <a href="https://wa.me/3209905700" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/yineyh_" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <iframe id="" allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera" src="https://lufcruhv.forms.app/form/68ace661f97d9a6911c5fcd9" frameborder="0" style="width: 80%; min-width:100%; height:1150px; border:none;"></iframe>                                                                         
+
+    </section>
+
+    <footer class="footer">
+        <p>Mi Portafolio &copy; 2025</p>
+    </footer>
+
+    <script>
+        function showExamples(serviceId) {
+            const allExamples = document.querySelectorAll('.service-examples');
+            allExamples.forEach(el => el.style.display = 'none');
+            const selectedExamples = document.getElementById(serviceId + '-examples');
+            if (selectedExamples) {
+                selectedExamples.style.display = 'block';
+            }
+        }
+
+        function closeMenu() {
+            const menuToggle = document.getElementById('menu-toggle');
+            menuToggle.checked = false;
+        }
+    </script>
+
+</body>
+</html>
